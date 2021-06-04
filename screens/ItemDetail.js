@@ -5,7 +5,8 @@ import {
     Text,
     Image,
     ImageBackground,
-    TouchableOpacity
+    TouchableOpacity,
+    Touchable
 } from 'react-native'
 import { COLORS, FONTS, icons, SIZES } from '../constants';
 
@@ -157,10 +158,33 @@ const ItemDetail = ({ route, navigation }) => {
             }}
         >
             <View style={{ flex: 2, alignitems: 'center', justifyContent: 'center' }}>
-                
+                <TouchableOpacity
+                    onPress={() => navigation.goBack()}
+                >
+                    <Image
+                        source={icons.dashboard}
+                        style={{
+                            tintColor: COLORS.gray,
+                            width: 25,
+                            height: 25,
+                        }}
+                    />
+                </TouchableOpacity>
             </View>
-            <View style={{ flex: 2, alignitems: 'center', justifyContent: 'center' }}>
 
+            <View style={{ flex: 1, alignitems: 'center', justifyContent: 'center' }}>
+                <TouchableOpacity
+                    style={{
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        height: 50,
+                        width: 50,
+                        borderRadius: 10,
+                        backgroundColor: COLORS.primary
+                    }}
+                >
+
+                </TouchableOpacity>
             </View>
             <View style={{ flex: 2, alignitems: 'center', justifyContent: 'center' }}>
 
