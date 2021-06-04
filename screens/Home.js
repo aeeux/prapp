@@ -15,10 +15,10 @@ const ScrollableTab = ({tabList, selectedTab, onPress}) => {
     
     const renderItem = ({item}) => (
         <TouchableOpacity
-            style={{ marginHorizontal: SIZES.padding}}
+            style={{ marginHorizontal: SIZES.padding }}
             onPress={() =>onPress(item)}
         >
-            <Text style={{ colors: COLORS.secondary, ...FONTS.body2 }}>{item.name}</Text>
+            <Text style={{ color: COLORS.blue, ...FONTS.body2 }}>{item.name}</Text>
 
             {
                 selectedTab.id ===item.id &&
@@ -254,8 +254,8 @@ const Home = ({ navigation }) => {
     function renderTitle(title) {
         return(
             <View style={{ marginTop: SIZES.padding, marginHorizontal: SIZES.padding }}>
-                <Text style={{ color: COLORS.black, ...FONTS.largeTitle }}>Collection of</Text>
-                <Text style={{ color: COLORS.black, ...FONTS.largeTitle }}>{title}</Text>
+                <Text style={{ color: COLORS.white, ...FONTS.largeTitle }}>Collection of</Text>
+                <Text style={{ color: COLORS.white, ...FONTS.largeTitle }}>{title}</Text>
             </View>
         )
     }
@@ -357,10 +357,10 @@ const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: COLORS.white
+        backgroundColor: COLORS.black,
     },
     shadow: {
-        shadowColor: "#000",
+        shadowColor: COLORS.white,
         shadowOffset: {
             width: 0,
             height: 3,
