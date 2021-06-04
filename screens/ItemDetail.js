@@ -182,12 +182,31 @@ const ItemDetail = ({ route, navigation }) => {
                         borderRadius: 10,
                         backgroundColor: COLORS.primary
                     }}
+                    onPress={() => console.log("Add-on clicked")}
                 >
-
+                    <Image 
+                        source={icons.plus}
+                        style={{
+                            tintColor: COLORS.white,
+                            height: 20,
+                            width: 20
+                        }}
+                    />
                 </TouchableOpacity>
             </View>
             <View style={{ flex: 2, alignitems: 'center', justifyContent: 'center' }}>
-
+                <TouchableOpacity
+                    onPress={() => console.log("Profile-on clicked")}
+                >
+                    <Image 
+                        source={icons.user}
+                        style={{
+                            tintColor: COLORS.gray,
+                            width: 25,
+                            height: 25
+                        }}
+                    />
+                </TouchableOpacity>
             </View>
         </View>
         )
