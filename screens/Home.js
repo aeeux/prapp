@@ -90,7 +90,7 @@ const Home = ({ navigation }) => {
                     productId: 1,
                     productName: 'Chair Green Colour',
                     price: 10.00,
-                    image: images.greenChair,
+                    image: images.mercedes,
                 },
                 {
                     productId: 2,
@@ -195,7 +195,7 @@ const Home = ({ navigation }) => {
                 productId: 1,
                 productName: 'Chair Green Colour',
                 price: 10.00,
-                image: images.greenChair,
+                image: images.mercedes,
             },
             {
                 productId: 2,
