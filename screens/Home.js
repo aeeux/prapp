@@ -47,6 +47,7 @@ const ScrollableCard = ({ navigation, productList }) => {
     const renderCard = ({ item }) => (
         <TouchableOpacity
             style={{ marginLeft: SIZES.padding }}
+            onPress={() => navigation.navigate("ItemDetail", {"itemInfo": item })}
         >
             <View style={{ width: SIZES.width / 1.2 }}>
                 <Image 
@@ -54,13 +55,18 @@ const ScrollableCard = ({ navigation, productList }) => {
                     resizeMode="cover"
                     style={{ width: '100%', height: '100%', borderRadius: SIZES.radius * 2 }}
                 />
+
+                <View style={{ position: 'absolute', top: 15, left: '10%', right: '10%' }}>
+                    <Text style={{ color: COLORS.lightGray2, ...FONTS.h3 }}>Model</Text>
+                    <Text style={{ marginTop: SIZES.base, color: COLORS.white, ...FONTS.h2 }}>{item.productName}</Text>
+                </View>
             </View>
 
         </TouchableOpacity>
     )
 
     return (
-        <View>
+        <View style={{ marginTop: SIZES.padding }}>
             <FlatList 
                 horizontal
                 showsHorizontalScrollIndicator={false}
@@ -274,7 +280,10 @@ const Home = ({ navigation }) => {
                 />
             </View>
 
+            {/* Footer - Promo Card */}
+            <View style={{ height: "19%" }}>
 
+            </View>
         </SafeAreaView>
     )
 }
