@@ -18,12 +18,19 @@ const ScrollableTab = ({tabList, selectedTab, onPress}) => {
             style={{ marginHorizontal: SIZES.padding}}
             onPress={() =>onPress(item)}
         >
-            <Text>{item.name}</Text>
+            <Text style={{ colors: COLORS.secondary, ...FONTS.body2 }}>{item.name}</Text>
+
+            {
+                selectedTab.id ===item.id &&
+                <View style={{ alignItems: 'center', marginTop: SIZES.base }}>
+                    <View style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: COLORS.blue }}></View>
+                </View>
+            }
         </TouchableOpacity>
     );
 
     return(
-        <View>
+        <View style={{ marginTop: SIZES.padding }}>
             <FlatList
                 horizontal
                 showsHorizontalScrollIndicator={false}
@@ -35,7 +42,37 @@ const ScrollableTab = ({tabList, selectedTab, onPress}) => {
     )
 }
 
-const Home = () => {
+const ScrollableCard = ({ navigation, productList }) => {
+
+    const renderCard = ({ item }) => (
+        <TouchableOpacity
+            style={{ marginLeft: SIZES.padding }}
+        >
+            <View style={{ width: SIZES.width / 1.2 }}>
+                <Image 
+                    source={item.image}
+                    resizeMode="cover"
+                    style={{ width: '100%', height: '100%', borderRadius: SIZES.radius * 2 }}
+                />
+            </View>
+
+        </TouchableOpacity>
+    )
+
+    return (
+        <View>
+            <FlatList 
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                data={productList}
+                renderItem={renderCard}
+                keyExtractor={item => item.productId}
+            />
+        </View>
+    )
+}
+
+const Home = ({ navigation }) => {
 
     const [tabList, setTabList] = React.useState([
         {
@@ -223,11 +260,21 @@ const Home = () => {
 
             {renderTitle(selectedTab.title)}
 
+
             <ScrollableTab
                 tabList={tabList}
                 selectedTab={selectedTab}
                 onPress={(item) => setSelectedTab(item)}
             />
+
+            <View style={{ flex: 1 }}>
+                <ScrollableCard 
+                    navigation={navigation}
+                    productList={selectedTab.productList}
+                />
+            </View>
+
+
         </SafeAreaView>
     )
 }
