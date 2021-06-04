@@ -5,18 +5,43 @@ import {
     View,
     Text,
     TouchableOpacity,
-    Image
+    Image,
+    FlatList
 } from 'react-native'
 
 import { images, icons, COLORS, SIZES, FONTS } from '../constants';
+
+const ScrollableTab = ({tabList, selectedTab, onPress}) => {
+    
+    const renderItem = ({item}) => (
+        <TouchableOpacity
+            style={{ marginHorizontal: SIZES.padding}}
+            onPress={() =>onPress(item)}
+        >
+            <Text>{item.name}</Text>
+        </TouchableOpacity>
+    );
+
+    return(
+        <View>
+            <FlatList
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                data={tabList}
+                renderItem={renderItem}
+                keyExtractor={item => item.id}
+            />
+        </View>
+    )
+}
 
 const Home = () => {
 
     const [tabList, setTabList] = React.useState([
         {
             id: 0,
-            name: "Chair",
-            title: "chairs",
+            name: "Mercedes",
+            title: "Mercedes",
             productList: [
                 {
                     productId: 1,
@@ -40,8 +65,8 @@ const Home = () => {
         },
         {
             id: 1,
-            name: "Cupboard",
-            title: 'cupboards',
+            name: "Audi",
+            title: 'Audi',
             productList: [
                 {
                     productId: 4,
@@ -66,8 +91,8 @@ const Home = () => {
         },
         {
             id: 2,
-            name: "Table",
-            title: 'tables',
+            name: "Lamborghini",
+            title: 'Lamborghini',
             productList: [
                 {
                     productId: 7,
@@ -92,8 +117,8 @@ const Home = () => {
         },
         {
             id: 3,
-            name: "Accessories",
-            title: 'accessories',
+            name: "BMW",
+            title: 'BMW',
             productList: [
                 {
                     productId: 10,
@@ -118,7 +143,32 @@ const Home = () => {
         }
     ])
 
-    
+    const [selectedTab, setSelectedTab] = React.useState({
+        id: 0,
+        name: "Cars",
+        title: 'Cars',
+        productList: [
+            {
+                productId: 1,
+                productName: 'Chair Green Colour',
+                price: 10.00,
+                image: images.greenChair,
+            },
+            {
+                productId: 2,
+                productName: 'Chair Peach Colour',
+                price: 10.00,
+                image: images.redChair,
+            },
+            {
+                productId: 3,
+                productName: 'Chair White Colour',
+                price: 10.00,
+                image: images.whiteChair,
+            },
+
+        ]
+    })
 
     // Render
 
@@ -171,7 +221,13 @@ const Home = () => {
         <SafeAreaView style={styles.container}>
             {renderHeader()}
 
-            {renderTitle("Test title")}
+            {renderTitle(selectedTab.title)}
+
+            <ScrollableTab
+                tabList={tabList}
+                selectedTab={selectedTab}
+                onPress={(item) => setSelectedTab(item)}
+            />
         </SafeAreaView>
     )
 }
