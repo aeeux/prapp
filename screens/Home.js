@@ -88,9 +88,10 @@ const Home = ({ navigation }) => {
             productList: [
                 {
                     productId: 1,
-                    productName: 'Chair Green Colour',
+                    productName: 'GLB-Class AMG Styling',
                     price: 10.00,
                     image: images.mercedes,
+                    productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
                     productId: 2,
@@ -193,9 +194,10 @@ const Home = ({ navigation }) => {
         productList: [
             {
                 productId: 1,
-                productName: 'Chair Green Colour',
+                productName: 'GLB-Class AMG Styling',
                 price: 10.00,
                 image: images.mercedes,
+                productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
             },
             {
                 productId: 2,
