@@ -215,46 +215,10 @@ const Home = ({ navigation }) => {
 
     // Render
 
-    function renderHeader() {
-        return (
-            <View style={{ paddingHorizontal: SIZES.padding }}>
-                <View style={{ flexDirection: 'row'}}>
-                    <TouchableOpacity
-                        style={{ flex: 1 }}
-                        onPress={() => console.log("Cart-on clicked")}
-                    >
-                        <Image 
-                            source={icons.menu}
-                            resizeMode="contain"
-                            style={{
-                                width: 25,
-                                height: 25
-                            }}
-                        />
-                    </TouchableOpacity>
-
-                    <TouchableOpacity
-                        style={{ flex: 1, alignItems: 'flex-end'}}
-                        onPress={() => console.log("Cart-on clicked")}
-                    >
-                        <Image 
-                            source={icons.cart}
-                            resizeMode="contain"
-                            style={{
-                                width: 25,
-                                height: 25
-                            }}
-                        />
-                    </TouchableOpacity>
-                </View>
-            </View>
-        )
-    }
-
     function renderTitle(title) {
         return(
             <View style={{ marginTop: SIZES.padding, marginHorizontal: SIZES.padding }}>
-                <Text style={{ color: COLORS.white, ...FONTS.largeTitle }}>Collection of</Text>
+                <Text style={{ color: COLORS.gray, ...FONTS.largeTitle }}>Collection of</Text>
                 <Text style={{ color: COLORS.white, ...FONTS.largeTitle }}>{title}</Text>
             </View>
         )
@@ -268,67 +232,27 @@ const Home = ({ navigation }) => {
                     flexDirection: 'row',
                     marginHorizontal: SIZES.padding,
                     padding: SIZES.radius,
-                    height: 110,
+                    height: 100,
                     borderRadius: 20,
-                    backgroundColor: COLORS.white
                 }]}
             >
-                <View
-                    style={{
-                        width: 50,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        backgroundColor:  COLORS.lightGray2,
-                        borderRadius: 20
-                    }}
-                >
-                    <Image 
-                        source={images.sofa}
-                        resizeMode="contain"
-                        style={{
-                            width: '60%',
-                            height: '60%'
-                        }}
-                    />
-                </View>
 
                 {/* Wordings section */}
                 <View style={{ flex: 1, marginLeft: SIZES.radius, justifyContent: 'center' }}>
-                    <Text style={{ ...FONTS.h2 }}>Special Offer</Text>
-                    <Text style={{ ...FONTS.body3 }}>Adding to your cart</Text>
+                    <Text style={{ color: COLORS.white, ...FONTS.h2 }}>
+                        About us
+                    </Text>
+                    <Text style={{ color: COLORS.white, ...FONTS.body3 }}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, 
+                        in rutrum dui auctor sed.
+                    </Text>
                 </View>
-                
-                {/* Button */}
-                <View style={{ marginRight: SIZES.radius, alignItems: 'center', justifyContent: 'center' }}>
-                    <TouchableOpacity
-                        style={{ 
-                            backgroundColor: COLORS.primary,
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            height: '70%',
-                            width: 40,
-                            borderRadius: 10
-                        }}
-                        onPress={() => {console.log("Promo-on clicked")}}
-                    >
-                        <Image
-                            source={icons.chevron}
-                            resizeMode="contain"
-                            style={{
-                                height: '50%',
-                                width: '50%'
-                            }}
-                        />
-                    </TouchableOpacity>
-                </View>
-
             </View>
         )
     }
 
     return(
         <SafeAreaView style={styles.container}>
-            {renderHeader()}
 
             {renderTitle(selectedTab.title)}
 
@@ -347,7 +271,7 @@ const Home = ({ navigation }) => {
             </View>
 
             {/* Footer - Promo Card */}
-            <View style={{ height: "19%", justifyContent: 'flex-end' }}>
+            <View style={{ height: "25%", justifyContent: 'flex-end' }}>
                 {renderPromotionCard()}
             </View>
         </SafeAreaView>
@@ -359,16 +283,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: COLORS.black,
     },
-    shadow: {
-        shadowColor: COLORS.white,
-        shadowOffset: {
-            width: 0,
-            height: 3,
-        },
-        shadowOpacity: 0.32,
-        shadowRadius: 5.46,
-        elevation: 9,
-    }
 })
 
 export default Home;
