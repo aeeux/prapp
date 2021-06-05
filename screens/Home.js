@@ -57,9 +57,9 @@ const ScrollableCard = ({ navigation, productList }) => {
                     style={{ width: '100%', height: '100%', borderRadius: SIZES.radius * 2 }}
                 />
 
-                <View style={{ position: 'absolute', top: 15, left: '10%', right: '10%' }}>
-                    <Text style={{ color: COLORS.lightGray2, ...FONTS.h3 }}>Model</Text>
-                    <Text style={{ marginTop: SIZES.base, color: COLORS.white, ...FONTS.h2 }}>{item.productName}</Text>
+                <View style={{ borderRadius: SIZES.radius, padding: 8, backgroundColor: COLORS.transparentBlack, position: 'absolute', top: -10, left: '5%', right: 'auto' }}>
+                    <Text style={{ color: COLORS.lightGray, ...FONTS.h3 }}>Model</Text>
+                    <Text style={{ marginTop: SIZES.base, color: COLORS.blue, ...FONTS.h2 }}>{item.productName}</Text>
                 </View>
             </View>
 
