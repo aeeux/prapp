@@ -5,6 +5,8 @@ export const user = require("../assets/icons/user_icon.png");
 export const cart = require("../assets/icons/cart_icon.png");
 export const dashboard = require("../assets/icons/dashboard_icon.png");
 export const menu = require("../assets/icons/menu_icon.png");
+export const home = require("../assets/icons/home.png");
+export const phone = require("../assets/icons/phone.png");
 
 export default {
     search,
@@ -14,4 +16,6 @@ export default {
     cart,
     dashboard,
     menu,
+    home,
+    phone,
 }
