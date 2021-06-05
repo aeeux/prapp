@@ -6,7 +6,8 @@ import {
     Image,
     ImageBackground,
     TouchableOpacity,
-    Touchable
+    Touchable,
+    ScrollView
 } from 'react-native'
 import { COLORS, FONTS, icons, SIZES } from '../constants';
 
@@ -25,27 +26,22 @@ const ItemDetail = ({ route, navigation }) => {
                     resizeMode="cover"
                     style={{ width: '100%', height: '70%' }}
                 >
+                    <ScrollView style={{ top: '70%', height: 100, }}>
                         <View
                             style={{
-                                position: 'absolute',
-                                bottom: "20%",
-                                left: SIZES.padding,
-                                right: SIZES.padding,
+                                marginHorizontal: SIZES.padding,
                             }}
                         >
                             <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h1 }}>{itemInfo.productName}</Text>
                         </View>
                         <View
                             style={{
-                                position: 'absolute',
-                                top: "80%",
-                                left: SIZES.padding,
-                                right: SIZES.padding,
+                                marginHorizontal: SIZES.padding,
                             }}
                         >
                         <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h3 }}>{itemInfo.productDescription}</Text>
                         </View>
-
+                    </ScrollView>
                 </ImageBackground>
             )
         } else {
