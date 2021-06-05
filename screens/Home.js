@@ -6,7 +6,8 @@ import {
     Text,
     TouchableOpacity,
     Image,
-    FlatList
+    FlatList,
+    ScrollView
 } from 'react-native'
 
 import { images, icons, COLORS, SIZES, FONTS } from '../constants';
@@ -253,7 +254,9 @@ const Home = ({ navigation }) => {
         )
     }
 
-    function renderPromotionCard() {
+    //About section
+
+    function renderAboutCard() {
         
         return (
             <View
@@ -261,20 +264,30 @@ const Home = ({ navigation }) => {
                     flexDirection: 'row',
                     marginHorizontal: SIZES.padding,
                     padding: SIZES.radius,
-                    height: 100,
-                    borderRadius: 20,
                 }]}
             >
 
                 {/* Wordings section */}
-                <View style={{ flex: 1, marginLeft: SIZES.radius, justifyContent: 'center' }}>
+                <View style={{ flex: 1, justifyContent: 'center' }}>
+
                     <Text style={{ color: COLORS.white, ...FONTS.h2 }}>
                         About us
                     </Text>
-                    <Text style={{ color: COLORS.white, ...FONTS.body3 }}>
+                    <Text style={{ color: COLORS.gray, ...FONTS.body3 }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, 
-                        in rutrum dui auctor sed.
+                        in rutrum dui auctor sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </Text>
+
+                    <Text style={{ marginTop: 30, color: COLORS.white, ...FONTS.h2 }}>
+                        Found a car yet?
+                    </Text>
+                    <Text style={{marginTop: 8, color: COLORS.gray, ...FONTS.body3 }}>
+                        Use our 'smart-sort' feature in the top to sort between brands 
+                        and go to the cars page.{"\n"}{"\n"}
+
+                        Use the Phone icon to dial us immediately and recieve a great deal on your soughtafter car.
+                    </Text>
+                    
                 </View>
             </View>
         )
@@ -285,14 +298,13 @@ const Home = ({ navigation }) => {
 
             {renderTitle(selectedTab.title)}
 
-
             <ScrollableTab
                 tabList={tabList}
                 selectedTab={selectedTab}
                 onPress={(item) => setSelectedTab(item)}
             />
 
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, marginBottom: SIZES.padding }}>
                 <ScrollableCard 
                     navigation={navigation}
                     productList={selectedTab.productList}
@@ -300,9 +312,14 @@ const Home = ({ navigation }) => {
             </View>
 
             {/* Footer - Promo Card */}
-            <View style={{ height: "25%", justifyContent: 'flex-end' }}>
-                {renderPromotionCard()}
+            <View style={{ justifyContent: 'flex-end' 
+                }}
+            >
             </View>
+
+            <ScrollView style={{ height: 100, }}>
+            {renderAboutCard()}
+            </ScrollView>
         </SafeAreaView>
     )
 }
