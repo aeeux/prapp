@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     StyleSheet,
     View,
@@ -7,9 +7,17 @@ import {
     ImageBackground,
     TouchableOpacity,
     Touchable,
-    ScrollView
+    ScrollView,
+    Dimensions
 } from 'react-native'
 import { COLORS, FONTS, icons, SIZES } from '../constants';
+
+import ImageSwipe from '../components/Slider';
+
+const images = [
+    'https://www.carpixel.net/w/cf38a01edab002e770d0a919b877bd91/bmw-x6-m-competition-car-wallpaper-95619.jpg',
+    'https://www.carpixel.net/w/ddb5ff80d081b1a63a964f72e614e54b/bmw-x6-m-competition-car-wallpaper-95628.jpg',
+]
 
 const ItemDetail = ({ route, navigation }) => {
 
@@ -21,29 +29,27 @@ const ItemDetail = ({ route, navigation }) => {
         if(itemInfo) {
 
             return (
-                
-                <ImageBackground
-                    source={itemInfo.image}
-                    resizeMode="cover"
-                    style={{ width: '100%', height: '70%' }}
-                >
-                    <ScrollView style={{ top: '70%', height: 100, }}>
-                        <View
-                            style={{
-                                marginHorizontal: SIZES.padding,
-                            }}
-                        >
-                            <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h1 }}>{itemInfo.productName}</Text>
-                        </View>
-                        <View
-                            style={{
-                                marginHorizontal: SIZES.padding,
-                            }}
-                        >
+                <ScrollView style={{ top: '5%', height: 100, }}>
+                    <View style={styles.container}>
+                        <ImageSwipe images={images} />
+                    </View>
+
+                    <View
+                        style={{
+                            marginHorizontal: SIZES.padding,
+                        }}
+                    >
+                        <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h1 }}>{itemInfo.productName}</Text>
+                    </View>
+                    <View
+                        style={{
+                            marginHorizontal: SIZES.padding,
+                        }}
+                    >
                         <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h3 }}>{itemInfo.productDescription}</Text>
-                        </View>
-                    </ScrollView>
-                </ImageBackground>
+                    </View>
+
+                </ScrollView>
             )
         } else {
             <View>
