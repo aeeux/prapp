@@ -35,6 +35,16 @@ const ItemDetail = ({ route, navigation }) => {
                         >
                             <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h1 }}>{itemInfo.productName}</Text>
                         </View>
+                        <View
+                            style={{
+                                position: 'absolute',
+                                top: "80%",
+                                left: SIZES.padding,
+                                right: SIZES.padding,
+                            }}
+                        >
+                        <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h3 }}>{itemInfo.productDescription}</Text>
+                        </View>
 
                 </ImageBackground>
             )
