@@ -21,6 +21,7 @@ const ItemDetail = ({ route, navigation }) => {
         if(itemInfo) {
 
             return (
+                
                 <ImageBackground
                     source={itemInfo.image}
                     resizeMode="cover"
