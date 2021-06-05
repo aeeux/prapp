@@ -10,6 +10,7 @@ export const lamboUrus = require("../assets/images/lamboUrus.jpg");
 
 //BMW
 export const bmwI8 = require("../assets/images/bmwI8.jpg");
+export const bmwX6 = require("../assets/images/bmwX6.jpg");
 
 export default {
 
@@ -24,4 +25,5 @@ export default {
 
     //BMW
     bmwI8,
+    bmwX6,
 }
