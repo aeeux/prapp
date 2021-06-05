@@ -183,21 +183,21 @@ const Home = ({ navigation }) => {
                     productId: 1,
                     productName: 'I8',
                     price: 10.00,
-                    image: images.bmwI8,
+                    image: images.bmwX6,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
                     productId: 2,
                     productName: 'I8',
                     price: 10.00,
-                    image: images.bmwI8,
+                    image: images.bmwX6,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
                     productId: 3,
                     productName: 'I8',
                     price: 10.00,
-                    image: images.bmwI8,
+                    image: images.bmwX6,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
 
@@ -221,7 +221,7 @@ const Home = ({ navigation }) => {
                 productId: 2,
                 productName: 'BMW',
                 price: 10.00,
-                image: images.bmwI8,
+                image: images.bmwX6,
                 productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
             },
             {
