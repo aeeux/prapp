@@ -4,6 +4,7 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 
 // Screens
 import { Home, ItemDetail} from "./screens/";
+import { Text, View, StyleSheet, ActivityIndicator,  } from 'react-native';
 
 const theme = {
   ...DefaultTheme,
@@ -30,6 +31,17 @@ const App = () => {
       </NavigationContainer>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    position: 'relative',
+    justifyContent: "center"
+  },
+  horizontal: {
+    justifyContent: "space-around",
+  }
+});
 
 export default () => {
   return <App />;
