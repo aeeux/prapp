@@ -8,7 +8,8 @@ import {
     TouchableOpacity,
     Touchable,
     ScrollView,
-    Dimensions
+    Dimensions,
+    SafeAreaView
 } from 'react-native'
 import { COLORS, FONTS, icons, SIZES } from '../constants';
 
@@ -28,7 +29,7 @@ const ItemDetail = ({ route, navigation }) => {
 
         if(itemInfo) {
             return (
-                <ScrollView style={{ top: '5%', height: 100, }}>
+                <ScrollView style={{ top: '%', height: 100, }}>
                     <View style={styles.container}>
                         <ImageSwipe images={itemInfo.carousel} />
                     </View>
@@ -47,7 +48,6 @@ const ItemDetail = ({ route, navigation }) => {
                     >
                         <Text style={{ marginTop: SIZES.radius, color: COLORS.white, ...FONTS.h3 }}>{itemInfo.productDescription}</Text>
                     </View>
-
                 </ScrollView>
             )
         } else {
@@ -106,10 +106,10 @@ const ItemDetail = ({ route, navigation }) => {
     }
 
     return(
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             {renderInfo()}
             {renderFooter()}
-        </View>
+        </SafeAreaView>
     )
 }
 
