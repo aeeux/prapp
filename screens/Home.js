@@ -132,6 +132,7 @@ const Home = ({ navigation }) => {
                     price: 10.00,
                     image: images.audiQ8,
                     carousel: images.carouselAudiQ8,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -163,7 +164,6 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
-                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -171,7 +171,6 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
-                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -179,7 +178,6 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
-                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
 
@@ -221,38 +219,17 @@ const Home = ({ navigation }) => {
 
     const [selectedTab, setSelectedTab] = React.useState({
         id: 0,
-        name: "Cars",
-        title: 'Cars',
+        name: "Mercedes",
+        title: "Mercedes",
         productList: [
             {
-                productId: 1,
-                productName: 'Audi',
-                price: 10.00,
-                image: images.audiQ8,
-                productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
+            productId: 1,
+            productName: 'GLB-Class AMG Styling',
+            price: 10.00,
+            image: images.mercedesGlb,
+            carousel: images.carouselMercedes,
+            productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
             },
-            {
-                productId: 2,
-                productName: 'BMW',
-                price: 10.00,
-                image: images.bmwX6,
-                productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
-            },
-            {
-                productId: 3,
-                productName: 'Lamborghini',
-                price: 10.00,
-                image: images.lamboUrus,
-                productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
-            },
-            {
-                productId: 4,
-                productName: 'Mercedes',
-                price: 10.00,
-                image: images.mercedesGlb,
-                productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
-            },
-
         ]
     })
 
