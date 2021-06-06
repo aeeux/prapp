@@ -97,9 +97,10 @@ const Home = ({ navigation }) => {
                 },
                 {
                     productId: 2,
-                    productName: 'M4',
+                    productName: 'GLB2',
                     price: 10.00,
                     image: images.mercedesGlb,
+                    carousel: images.carouselMercedes,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus',
                 },
                 {
@@ -107,6 +108,7 @@ const Home = ({ navigation }) => {
                     productName: 'GLB3',
                     price: 10.00,
                     image: images.mercedesGlb,
+                    carousel: images.carouselMercedes,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -114,6 +116,7 @@ const Home = ({ navigation }) => {
                     productName: 'GLB4',
                     price: 10.00,
                     image: images.mercedesGlb,
+                    carousel: images.carouselMercedes,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
             ]
@@ -128,6 +131,7 @@ const Home = ({ navigation }) => {
                     productName: 'Q8',
                     price: 10.00,
                     image: images.audiQ8,
+                    carousel: images.carouselAudiQ8,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -135,6 +139,7 @@ const Home = ({ navigation }) => {
                     productName: 'Q8',
                     price: 10.00,
                     image: images.audiQ8,
+                    carousel: images.carouselAudiQ8,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -142,6 +147,7 @@ const Home = ({ navigation }) => {
                     productName: 'Q8',
                     price: 10.00,
                     image: images.audiQ8,
+                    carousel: images.carouselAudiQ8,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
 
@@ -157,6 +163,7 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -164,6 +171,7 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -171,6 +179,7 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
 
@@ -183,23 +192,26 @@ const Home = ({ navigation }) => {
             productList: [
                 {
                     productId: 1,
-                    productName: 'I8',
+                    productName: 'X6',
                     price: 10.00,
                     image: images.bmwX6,
+                    carousel: images.carouselBmwX6,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
                     productId: 2,
-                    productName: 'I8',
+                    productName: 'X6',
                     price: 10.00,
                     image: images.bmwX6,
+                    carousel: images.carouselBmwX6,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
                     productId: 3,
-                    productName: 'I8',
+                    productName: 'X6',
                     price: 10.00,
                     image: images.bmwX6,
+                    carousel: images.carouselBmwX6,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
 
