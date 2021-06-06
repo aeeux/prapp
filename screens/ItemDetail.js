@@ -27,11 +27,10 @@ const ItemDetail = ({ route, navigation }) => {
         let { itemInfo } = route.params;
 
         if(itemInfo) {
-
             return (
                 <ScrollView style={{ top: '5%', height: 100, }}>
                     <View style={styles.container}>
-                        <ImageSwipe images={images} />
+                        <ImageSwipe images={itemInfo.carousel} />
                     </View>
 
                     <View
