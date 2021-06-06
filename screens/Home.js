@@ -92,11 +92,12 @@ const Home = ({ navigation }) => {
                     productName: 'GLB-Class AMG Styling',
                     price: 10.00,
                     image: images.mercedesGlb,
+                    carousel: images.carouselMercedes,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
                     productId: 2,
-                    productName: 'GLB2',
+                    productName: 'M4',
                     price: 10.00,
                     image: images.mercedesGlb,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus',
@@ -233,7 +234,7 @@ const Home = ({ navigation }) => {
                 productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
             },
             {
-                productId: 3,
+                productId: 4,
                 productName: 'Mercedes',
                 price: 10.00,
                 image: images.mercedesGlb,
