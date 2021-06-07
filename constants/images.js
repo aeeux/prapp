@@ -1,6 +1,7 @@
 
 //Mercedes
 export const mercedesGlb = require("../assets/images/mercedesGlb.jpg");
+export const mercedesAmgGt = require("../assets/images/mercedesAmgGt.jpg");
 
 //Audi
 export const audiQ8 = require("../assets/images/audiQ8.jpg");
@@ -18,9 +19,13 @@ const carouselBmwX6 = [
 ];
 
 //Carousel-Mercedes
-const carouselMercedes = [
+const carouselMercedesGlb = [
     'https://www.carpixel.net/w/a61b0ad3dba8bf6ef498505b9a8cf9c0/mercedes-benz-glb-class-amg-styling-car-wallpaper-97164.jpg',
     'https://www.carpixel.net/w/9d6f64b6b439a30d9eb50f2804578316/mercedes-benz-glb-class-amg-styling-car-wallpaper-97166.jpg',
+];
+const carouselMercedesAmgGt = [
+    'https://www.carpixel.net/w/50a60edd0a9cc51684369766438f049b/mercedes-amg-gt-car-wallpaper-84859.jpg',
+    'https://www.carpixel.net/w/5a4599cde93690ecbde3975a5b72e2a7/mercedes-amg-gt-car-wallpaper-84858.jpg',
 ];
 
 //Carousel-Audi
@@ -45,7 +50,8 @@ export default {
     carouselBmwX6,
 
     //Carousel-Mercedes
-    carouselMercedes,
+    carouselMercedesGlb,
+    carouselMercedesAmgGt,
 
     //Carousel-Mercedes
     carouselAudiQ8,
@@ -60,6 +66,7 @@ export default {
 
     //Mercedes
     mercedesGlb,
+    mercedesAmgGt,
 
     //Audi
     audiQ8,
