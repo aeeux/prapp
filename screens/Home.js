@@ -164,6 +164,7 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -171,6 +172,7 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
                 {
@@ -178,6 +180,7 @@ const Home = ({ navigation }) => {
                     productName: 'Urus',
                     price: 10.00,
                     image: images.lamboUrus,
+                    carousel: images.carouselLamboUrus,
                     productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus euismod lacus, in rutrum dui auctor sed. Ut eget felis rhoncus, interdum eros sit amet, sodales nisl. Sed pharetra lectus eget lacinia dapibus.',
                 },
 
