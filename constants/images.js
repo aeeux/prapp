@@ -37,7 +37,7 @@ const carouselAudiQ8 = [
 //Carousel-Lamborghini
 const carouselLamboUrus = [
     'https://www.carpixel.net/w/c495f173cdb1c467f5a42d463873c138/lamborghini-urus-car-wallpaper-75923.jpg',
-    'https://www.carpixel.net/w/2140ea2636a388d3a585da51e2c5e069/lamborghini-urus-car-wallpaper-74975.jpg',
+    'https://www.carpixel.net/w/ab0d4b3d88751abdd52d4c52dc3188e8/lamborghini-urus-car-wallpaper-75927.jpg',
 ];
 
 export default {
